@@ -8,7 +8,6 @@ type Props = {
 
 export const PersonLink: React.FC<Props> = ({ people }) => {
   const { slug: selectedUserSlug } = useParams();
-  //const selectedUserSlug = slug;
 
   const findMother = (motherName: string) => {
     const mother = people.find(person => person.name === motherName);
